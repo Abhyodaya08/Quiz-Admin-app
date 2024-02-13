@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/itemQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Question"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:hint="Enter Option 1"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:id="@+id/itemOption2"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Option 2"
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:id="@+id/itemOption3"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Option 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:id="@+id/itemOption4"
+            android:layout_width="match_parent"
+            android:hint="Enter Option 4"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            />
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:id="@+id/itemCorrectAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter correct answer"
+            android:ems="10"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnItemUpdate"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="10dp"
+                android:text="Update" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/btnItemDelete"
+                android:paddingLeft="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

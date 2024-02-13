@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddFragment">
+
+    <TextView
+        android:id="@+id/tvQuesHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Question"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etQues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/etQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvOptionHeading"
+        app:layout_constraintEnd_toEndOf="@+id/tvQuesHeading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvQuesHeading"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuesHeading" />
+
+    <TextView
+        android:id="@+id/tvOptionHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Options"
+        android:textSize="20dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etOption1"
+        app:layout_constraintEnd_toEndOf="@+id/etQues"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etQues"
+        app:layout_constraintTop_toBottomOf="@+id/etQues" />
+
+    <EditText
+        android:id="@+id/etOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/etOption2"
+        app:layout_constraintEnd_toEndOf="@+id/tvOptionHeading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvOptionHeading"
+        app:layout_constraintTop_toBottomOf="@+id/tvOptionHeading" />
+
+    <EditText
+        android:id="@+id/etOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etOption3"
+        app:layout_constraintEnd_toEndOf="@+id/etOption1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etOption1"
+        app:layout_constraintTop_toBottomOf="@+id/etOption1" />
+
+    <EditText
+        android:id="@+id/etOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etOption4"
+        app:layout_constraintEnd_toEndOf="@+id/etOption2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etOption2"
+        app:layout_constraintTop_toBottomOf="@+id/etOption2" />
+
+    <EditText
+        android:id="@+id/etOption4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAnsHeading"
+        app:layout_constraintEnd_toEndOf="@+id/etOption3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etOption3"
+        app:layout_constraintTop_toBottomOf="@+id/etOption3" />
+
+
+    <TextView
+        android:id="@+id/tvAnsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter correct Answer"
+        android:textSize="20dp"
+        android:paddingTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/etOption4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etOption4"
+        app:layout_constraintTop_toBottomOf="@+id/etOption4" />
+
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnsHeading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvAnsHeading"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnsHeading" />
+
+    <Button
+        android:id="@+id/btnQuesSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etAnswer"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="@+id/etAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/etAnswer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
